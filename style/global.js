@@ -7,7 +7,7 @@ export const globalStyle = StyleSheet.create({
   header: {
     width: '100%',
     paddingTop: 40,
-    backgroundColor: 'lightseagreen',
+    backgroundColor: 'red',
     height: 80,
     alignItems: 'center',
     justifyContent: 'center'

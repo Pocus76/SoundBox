@@ -12,7 +12,7 @@ export default class ProductItem extends React.Component {
 
         console.log(this.props.product);
         return (
-            <TouchableOpacity onPress={() => this.props.onPressItem(this.props.product.id)} style={homeStyle.productContainer}>
+            <TouchableOpacity onPress={() => this.props.onPressItem(this.props.product.id)} style={homeStyle.imgBtnContainer}>
                 <Image />
                 <Text style={fontsStyle.productScanDate}>
                     {this.props.product.date.toDateString()}

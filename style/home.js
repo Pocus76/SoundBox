@@ -3,8 +3,15 @@ import {StyleSheet} from 'react-native';
 export const homeStyle = StyleSheet.create({
 
     imgBtnContainer : {
-        width: '33%',
-        alignItems: 'flex-start'
+        margin: 4,
+        width:'30%'
+    },
+    imgBtn : {
+        height:50,
+        width:'100%'
+    },
+    txtBtn : {
+        textAlign: 'center'
     },
     productContainer: {
         width: '100%',

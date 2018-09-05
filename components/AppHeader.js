@@ -8,7 +8,6 @@ export default class AppHeader extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     return (
         <View style={globalStyle.header}>
           <Text style={globalStyle.headerText}>

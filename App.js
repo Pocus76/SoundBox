@@ -9,40 +9,24 @@ import ImgBtn from "./components/ImgBtn.js"
 export default class App extends React.Component {
     constructor() {
         super();
-        this.state = {
-            sound: new Expo.Audio.Sound(),
-        }
-    }
-
-    async componentWillMount(audioFile) {
-        await this.state.sound.loadAsync(audioFile);
-    }
-
-    playCrashSound = async(val) => {
-        try {
-            await this.state.sound.playAsync(); //This works, but just only once!
-        }
-        catch (error) {
-            //
-        }
     }
 
     render() {
         return (
             <ScrollView contentContainerStyle={globalStyle.container}>
                 <AppHeader title='CAR CRASH SOUNDBOX'/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'CRASH DE OUF'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'BOUM VOITURE'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'TROP FORT'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'MEGA CRASH'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'EN MODE POSE'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'ET BIM'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'AIE AIE AIE'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'L\'ACCIDENT'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'LE DECES'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'ATTENTION'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'CA FAIT MAL'}/>
-                <ImgBtn path={require('./images/crash1.jpg')} name={'AH OUAIS'}/>
+                <ImgBtn soundName={(require('./sounds/crash1.wav'))} path={require('./images/crash1.jpg')} name={'CRASH DE OUF'}/>
+                <ImgBtn soundName={(require('./sounds/crash2.mp3'))} path={require('./images/crash2.jpg')} name={'BOUM VOITURE'}/>
+                <ImgBtn path={require('./images/crash3.jpg')} name={'TROP FORT'}/>
+                <ImgBtn path={require('./images/crash4.jpg')} name={'MEGA CRASH'}/>
+                <ImgBtn path={require('./images/crash5.jpg')} name={'EN MODE POSE'}/>
+                <ImgBtn path={require('./images/crash6.jpg')} name={'ET BIM'}/>
+                <ImgBtn path={require('./images/crash7.jpg')} name={'AIE AIE AIE'}/>
+                <ImgBtn path={require('./images/crash8.jpg')} name={'L\'ACCIDENT'}/>
+                <ImgBtn path={require('./images/crash9.jpg')} name={'LE DECES'}/>
+                <ImgBtn path={require('./images/crash10.jpg')} name={'ATTENTION'}/>
+                <ImgBtn path={require('./images/crash11.jpg')} name={'CA FAIT MAL'}/>
+                <ImgBtn path={require('./images/crash12.jpg')} name={'AH OUAIS'}/>
                 <ImgBtn path={require('./images/crash1.jpg')} name={'BRUIT FOU !'}/>
                 <ImgBtn path={require('./images/crash1.jpg')} name={'AH CARREMENT'}/>
                 <ImgBtn path={require('./images/crash1.jpg')} name={'pas terrible'}/>
